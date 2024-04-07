@@ -59,4 +59,4 @@ jobs:
 
       - name: Push
         run: |
-          docker push asia-northeast1-docker.pkg.dev/my-sandbox-385103/demo-app
+          docker push asia-northeast1-docker.pkg.dev/my-sandbox-385103/demo-app:latest
