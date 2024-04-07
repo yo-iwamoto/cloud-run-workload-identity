@@ -55,8 +55,8 @@ jobs:
 
       - name: Build
         run: |
-          docker build -t ${{ secrets.GCLOUD_ARTIFACT_REGISTRY }}/chatbot-ui:latest ./
+          docker build -t ${{ secrets.GCLOUD_ARTIFACT_REGISTRY }}/demo-app:latest ./
 
       - name: Push
         run: |
-          docker push ${{ secrets.GCLOUD_ARTIFACT_REGISTRY }}/chatbot-ui
+          docker push ${{ secrets.GCLOUD_ARTIFACT_REGISTRY }}/demo-app
