@@ -43,8 +43,9 @@ jobs:
         name: Setup Google Cloud
         uses: google-github-actions/auth@v2
         with:
+          project_id: 'my-sandbox-385103'
           service_account: 'cloud-run-workload-identity@my-sandbox-385103.iam.gserviceaccount.com'
-          workload_identity_provider: 'projects/my-sandbox-385103/locations/global/workloadIdentityPools/demo-workload-identity-pool/providers/github'
+          workload_identity_provider: 'projects/605980776054/locations/global/workloadIdentityPools/demo-workload-identity-pool/providers/github'
           
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
